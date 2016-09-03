@@ -31,21 +31,13 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration // This declares it as a Spring configuration class
-@EnableWebMvc // This enables Spring's ability to receive and process web
-				// requests. Necessary for interceptors too.
-@ComponentScan(basePackages = { "com.jorge.controller" }) // This scans the
-															// com.jorge.controller
-															// package for
-															// Spring components
-// @Import({ DatabaseConfig.class, SecurityConfig.class }) //If you are using a
-// Spring application without a 'ServletInitializer' class,
-// you can include other configuration classes from your primary configuration
-// class
+@EnableWebMvc // This enables Spring's ability to receive and process web requests. Necessary for interceptors too.
+@ComponentScan(basePackages = { "com.jorge.controller" }) // This scans the com.jorge.controller package for Spring components
 
-public class AppConfig extends WebMvcConfigurerAdapter { // Extend from
-															// WebMvcConfigurerAdapter
-															// is necessary for
-															// interceptors
+// @Import({ DatabaseConfig.class, SecurityConfig.class }) => //If you are using a Spring application without a 'ServletInitializer' class,
+														      // you can include other configuration classes from your primary configuration class
+
+public class AppConfig extends WebMvcConfigurerAdapter { // Extend from WebMvcConfigurerAdapter is necessary for interceptors
 
 	/*
 	 * If we aren't going to use Tiles, uncomment jspViewResolver() method and

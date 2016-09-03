@@ -5,6 +5,8 @@
 	<artifactId>spring3_mvc</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<name>spring3_mvc</name>
+    <description>Using MVC in Spring</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -49,7 +51,7 @@
 			<version>1.2</version>
 		</dependency>
 		
-		<!--  Tiles Maven Dependencies -->
+		<!-- Tiles Maven Dependencies -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-servlet</artifactId>
